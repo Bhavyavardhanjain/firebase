@@ -1,0 +1,344 @@
+/* *********************************************************************Scrollbar************************************************************************************* */
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #59EDEA;
+    border-radius: 20px;
+}
+/* ************************************************************************Main*************************************************************************************** */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #06101c;
+}
+#home{
+    height: 100vh;
+    background-image: url(Home/bg-landing-ono.7891c75a.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    bottom: 0;
+    display:flex;
+    align-items:center;
+    z-index: 2;
+}
+.navbar img{
+    width: 12rem;
+    margin-left: 8rem;
+}
+.navbar img:hover{
+    cursor: pointer;
+}
+.nav-items{
+    display: flex;
+    margin-left: 9rem;
+    width: 42rem;
+    justify-content: space-around;
+}
+.navbar a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav-items a:hover{
+    color: #59EDEA;
+}
+.register{
+    color: #fff;
+    margin-left: 10rem;
+    font-size: 15px;
+    text-decoration: none;
+    animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+    0%,18%,22%,25%,53%,57%,to {
+        text-shadow: 0 0 7px #fefefe,0 0 10px #fefefe,0 0 21px #fefefe,0 0 42px #33a2cb,0 0 82px #33a2cb,0 0 92px #33a2cb,0 0 102px #33a2cb
+    }
+
+    20%,24%,55% {
+        text-shadow: none
+    }
+}
+.blur{
+    width: 100%;
+    height: 15rem;
+    z-index: 1;
+    background: linear-gradient(rgba(0,0,0,5%),#06101c);
+    align-self: flex-end;
+}
+/* ***********************************************************************************About Ono*********************************************************************** */
+.about-ono{
+    background-color: #040714;
+    color: #fff;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.about-ono img{
+    width: 32rem;
+    margin-top: 4rem;
+}
+.about-ono-intro-div{
+    margin-top: 2rem;
+}
+.about-ono-intro-div p{
+    color: white;
+    width: 44rem;
+    font-size: 21px;
+    margin: 2rem;
+    text-align: center;
+}
+/* ********************************************************************************Artists**************************************************************************** */
+.artists-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.artists{
+    display: flex;
+    width: 300%;
+    position: relative;
+    animation: slide 15s normal ease-in-out infinite;
+}
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    16.66%{
+        left: 0;
+    }
+    33.32%{
+        left: -101%;
+    }
+    49.98%{
+        left: -101%;
+    }
+    66.64%{
+        left: -201%;
+    }
+    83.30%{
+        left: -201%;
+    }
+    100%{
+        left: 0;
+    }
+}
+/* ***************************************************************************************darshan********************************************************************* */
+.darshanrawal{
+    position: relative;
+}
+.darshanrawal img{
+    width: 100vw;
+}
+.darshanrawal-info-div{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 17rem;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+.darshanrawal-main{
+    color: white;
+    font-family: Stolzl Display,sans-serif;
+    margin-left: 9rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.darshan-date{
+    font-size: 26px;
+    color: #59EDEA;
+}
+.darshanrawal-info{
+    color: white;
+    width: 40rem;
+    height: 12rem;
+    margin-left: 15rem;
+    font-family: Jost,sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+}
+/* ******************************************************************************aerreo******************************************************************************* */
+.aerreo{
+    position: relative;
+}
+.aerreo img{
+    width: 100vw;    
+}
+.aerreo-info-div{
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 17rem;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    
+}
+.aerreo-main{
+    color: white;
+    font-family: Stolzl Display,sans-serif;
+    margin-left: 9rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 8px;
+}
+.aerreo-date{
+    font-size: 26px;
+    color: #59EDEA;
+}
+.aerreo-info{
+    color: white;
+    width: 40rem;
+    height: 9rem;
+    margin-left: 15rem;
+    font-family: Jost,sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+/* ******************************************************************************navjot******************************************************************************* */
+.navjot{
+    position: relative;
+}
+.navjot img{
+    width: 100vw;
+}
+.navjot-info-div{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 17rem;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+.navjot-main{
+    color: white;
+    font-family: Stolzl Display,sans-serif;
+    margin-left: 9rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+.navjot-date{
+    font-size: 26px;
+    color: #59EDEA;
+}
+.navjot-info{
+    color: white;
+    width: 40rem;
+    height: 3rem;
+    margin-left: 15rem;
+    font-family: Jost,sans-serif;
+    font-size: 22px;
+    line-height: 2rem;
+}
+/* *******************************************************************************Events****************************************************************************** */
+.events{
+    background-color: #01051B;
+    overflow: hidden;
+    height: 50rem;
+}
+.onoevents{
+    margin-left: 10rem;
+    margin-top: 2rem;
+    width: 18rem;
+}
+.events-grid{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.events-photo{
+    width: 20rem;
+    height: 25rem;
+    margin-left: 9rem;
+}
+.events-photo-cap{
+    color: white;
+    margin-top: 2rem;
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+    margin-bottom: 7rem;
+    margin-left: 9rem;
+}
+.events-photo-cap-date{
+    color: #A5C1D1;
+}
+.events button{
+    margin-left: 43rem;    
+    background-color: #384049;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    font-size: 15px;
+}
+.events button:hover{
+    cursor: pointer;
+}
+/* **************************************************************************Sponsors********************************************************************************* */
+.sponsors{
+    background-color: rgb(4,6,19);
+}
+.sponsors-img{
+    width: 100%;
+}
+.sponsors-logo{
+    display: flex;
+    flex-direction: column;
+}
+.sponsors-logo-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+.sponsors-logo-div-img{
+    width: 12rem;
+}
+/* ************************************************************************FAQs*************************************************************************************** */
+#FAQs{
+    background-color: #040713;
+}
+.introImage{
+    width: 100%;
+}
+#FAQs p{
+    font-family: Roboto,sans-serif;
+}
+.faq-info{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 150px;
+    padding-bottom: 50px;
+}
+.ques{
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+.ans{
+    display: none;
+    margin-bottom: 5px;
+    color: #c3c8c9;
+}

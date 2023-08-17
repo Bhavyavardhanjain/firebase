@@ -1,0 +1,60 @@
+body {
+  background-color: #06101c;
+  color: white;
+}
+
+.header {
+  /* margin:30px; */
+  padding: 40px 40px 20px 40px;
+  font-size: 1.5rem;
+}
+.back {
+  text-decoration: none;
+  color: white;
+}
+
+.heading {
+  margin: 50px;
+  padding-left: 10px;
+}
+
+.image {
+  float: left;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.container {
+  /* display:flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.event {
+  width: 1300px;
+  height: 350px;
+  border: 5px solid black;
+  margin: 20px;
+  background-color: #0a2647;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content{
+    margin:45px;
+}
+
+.about {
+  color: gray;
+
+}
+
+.date-time{
+    color: rgb(89 237 234);
+    font-size: 30px;
+}
+.location{
+    color: gray;
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(footerImage.957e389c.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;;
+    background-color: #06101c;
+}
+h1{
+    text-align: center;
+}
+input,select{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 25px;
+}
+.form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    width: 35vw;
+}
+label{
+    margin-top: 25px;
+    font-size: 1.25rem;
+}
+button{
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    height: 30px;
+    font-size: 1.25rem;
+}
+p{
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
